@@ -548,5 +548,90 @@ int main() {
 	//	letter += (g == 100 || g < 60) ? "" : (g % 10 > 7) ? "+" : (g % 10 < 3) ? "-" : "";
 	//	cout << letter << endl;
 	//}
+
+	//5.9:
+	//unsigned aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0;
+	//char ch;
+	//while (cin >> ch) {
+	//	if (ch == 'a')
+	//		++aCnt;
+	//	if (ch == 'e')
+	//		++eCnt;
+	//	if (ch == 'i')
+	//		++iCnt;
+	//	if (ch == 'o')
+	//		++oCnt;
+	//	if (ch == 'u')
+	//		++uCnt;
+	//}
+//
+	//cout << "Number of vowel a: \t" << aCnt << '\n'
+	//	<< "Number of vowel e: \t" << eCnt << '\n'
+	//	<< "Number of vowel i: \t" << iCnt << '\n'
+	//	<< "Number of vowel o: \t" << oCnt << '\n'
+	//	<< "Number of vowel u: \t" << uCnt << endl;
+
+	//5.10:
+	//unsigned aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0;
+	//char ch;
+	//while (cin >> ch) {
+	//	switch (ch)
+	//	{
+	//	case 'a':
+	//	case 'A':
+	//		++aCnt;
+	//		break;
+	//	case 'e':
+	//	case 'E':
+	//		++eCnt;
+	//		break;
+	//	case 'i':
+	//	case 'I':
+	//		++iCnt;
+	//		break;
+	//	case 'o':
+	//	case 'O':
+	//		++oCnt;
+	//		break;
+	//	case 'u':
+	//	case 'U':
+	//		++uCnt;
+	//		break;
+	//	default:
+	//		break;
+	//	}
+	//}
+//
+	//cout << "Number of vowel a: \t" << aCnt << '\n'
+	//	<< "Number of vowel e: \t" << eCnt << '\n'
+	//	<< "Number of vowel i: \t" << iCnt << '\n'
+	//	<< "Number of vowel o: \t" << oCnt << '\n'
+	//	<< "Number of vowel u: \t" << uCnt << endl;
+
+	//5.11:
+	//unsigned sapceCnt = 0, tabCnt = 0, newLineCnt = 0;
+	//char ch;
+	//while (cin >> std::noskipws >> ch) //启用格式输入
+	//{
+	//	switch (ch)
+	//	{
+	//	case ' ':
+	//		++sapceCnt;
+	//		break;
+	//	case '\t':
+	//		++tabCnt;
+	//		break;
+	//	case '\n':
+	//		++newLineCnt;
+	//		break;
+	//	default:
+	//		break;
+	//	}
+	//}
+//
+	//cout << "Number of vowel sacpe \t" << sapceCnt << '\n'
+	//	 << "Number of vowel tab \t" << tabCnt << '\n'
+	//	 << "Number of vowel newLine \t" << newLineCnt << endl;
+
 	return 0;
 }
