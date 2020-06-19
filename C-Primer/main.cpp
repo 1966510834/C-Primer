@@ -663,6 +663,32 @@ int main() {
 	/*vector<int> v1{ 0,1,1,2 }, v2{0,1,1,2,3,5,8};
 	cout << (is_prefix(v1, v2) ? "Yes\n" : "No\n") << endl;*/
 
+	//do while
+	/*string rsp;
+	do
+	{
+		cout << "Please enter two values:";
+		int val1 = 0, val2 = 0;
+		cin >> val1 >> val2;
+		cout << "The sum of " << val1 << " and " << val2 << " = "
+			<< val1 + val2 << "\n\n"
+			<< "More? Enter yes or no:";
+		cin >> rsp;
+	} while (!rsp.empty() && rsp[0] != '\n');*/
 
+	//5.20:
+	/*string read, tmp;
+	while (cin >> read)
+		if (read == tmp) 
+			break; 
+		else 
+			tmp = read;
+
+	if (cin.eof())  //½áÊø
+		cout << "no word was repeated." << endl;
+	else 
+		cout << read << " occurs twice in succession." << endl;*/
+
+	
 	return 0;
 }
