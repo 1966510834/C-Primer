@@ -689,6 +689,23 @@ int main() {
 	else 
 		cout << read << " occurs twice in succession." << endl;*/
 
-	
+	//5.21:
+	/*string curr, prev;
+	bool no_twice = true;
+	while (cin >> curr)
+	{
+		if (isupper(curr[0]) && prev == curr)
+		{
+			cout << curr << ": occurs twice in succestion" << endl;
+			no_twice = false;
+			break;
+		}
+		prev = curr;
+	}
+
+	if (no_twice)
+	{
+		cout << "No words was repeated." << endl;
+	}*/
 	return 0;
 }
