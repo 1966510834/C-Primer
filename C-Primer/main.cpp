@@ -14,6 +14,8 @@ using std::cerr;
 using std::vector;
 using std::begin;
 using std::end;
+using std::pair;
+
 //3.36:
 //bool compare(int* const pb1, int* const pe1, int* const pb2, int* const pe2)
 //{
@@ -27,6 +29,16 @@ using std::end;
 //	}
 //	return true;
 //}
+
+//5.17:
+/*bool is_prefix(vector<int> const& lhs, vector<int> const& rhs)
+{
+	if (lhs.size() > rhs.size())
+		return is_prefix(rhs, lhs);
+	for (unsigned i = 0; i != lhs.size(); ++i)
+		if (lhs[i] != rhs[i]) return false;
+	return true;
+}*/
 
 int main() {
 	//1.3:
@@ -632,6 +644,25 @@ int main() {
 	//cout << "Number of vowel sacpe \t" << sapceCnt << '\n'
 	//	 << "Number of vowel tab \t" << tabCnt << '\n'
 	//	 << "Number of vowel newLine \t" << newLineCnt << endl;
+
+
+	//5.14:
+	/*pair<string, int> max_duplicated; //pair是将2个数据组合成一个数据，当需要这样的需求时就可以使用pair
+	int count = 0;
+	for (string str, prestr; cin >> str; prestr = str)
+	{
+		if (str == prestr) ++count;
+		else count = 0;
+		if (count > max_duplicated.second) max_duplicated = { prestr, count };
+	}
+
+	if (max_duplicated.first.empty()) cout << "There's no duplicated string." << endl;
+	else cout << "the word " << max_duplicated.first << " occurred " << max_duplicated.second + 1 << " times. " << endl;*/
+
+	//5.17:
+	/*vector<int> v1{ 0,1,1,2 }, v2{0,1,1,2,3,5,8};
+	cout << (is_prefix(v1, v2) ? "Yes\n" : "No\n") << endl;*/
+
 
 	return 0;
 }
