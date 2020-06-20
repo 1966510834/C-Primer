@@ -139,9 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="fact.cpp" />
+    <ClCompile Include="factMain.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Chapter6.h" />
     <ClInclude Include="Sales_data.h" />
     <ClInclude Include="Sales_item.h" />
   </ItemGroup>

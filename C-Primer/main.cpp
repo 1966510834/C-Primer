@@ -40,6 +40,50 @@ using std::pair;
 	return true;
 }*/
 
+//6.3:
+/*int fact(int val)
+{
+	int ret = 1;
+	while (val > 1)
+		ret *= val--;
+	return ret;
+}*/
+
+//6.4:
+/*int jiechen()
+{
+	int ret = 1, val;
+	cout << "Please enter val" << endl;
+	cin >> val;
+	while (val > 1)
+		ret *= val--;
+	return ret;
+}*/
+
+//6.5:
+/*int juedui(signed val)
+{
+	if (val > 0)
+		return val;
+	else
+		return -val;
+}*/
+
+//6.6
+/*size_t count_add(int n)       // n is a parameter.
+{
+	static size_t ctr = 0;    // ctr is a static variable.
+	ctr += n;
+	return ctr;
+}*/
+
+//6.7:
+/*size_t count_adds()
+{
+	static size_t i = 0;
+	return i++;
+}*/
+
 int main() {
 	//1.3:
 	//cout << "Hello,World。" << endl;
@@ -707,5 +751,67 @@ int main() {
 	{
 		cout << "No words was repeated." << endl;
 	}*/
+
+	// throw try catch 
+	/*Sales_item item1, item2;
+	cout << "Please enter item1 and item2" << endl;
+	while (cin >> item1 >> item2)
+	{
+		try
+		{
+			if (item1.isbn() != item2.isbn()) {
+				throw std::runtime_error("Data must refer to same ISBN");
+			}
+			cout << item1 + item2 << endl;
+			cout << "\n More enter? Enter y or n" << endl;
+			char c;
+			cin >> c;
+			if (!cin || c == 'n')
+				break;//跳出while循环
+		}
+		catch (std::runtime_error err)
+		{
+			cout << err.what() << "\nTry Again? Enter y or n" << endl;
+			char c;
+			cin >> c;
+			if (!cin || c == 'n')
+				break;//跳出while循环
+		}
+	}*/
+	
+	//5.25:
+	/*int a, b;
+	while (cin >> a >> b)
+	{
+		try
+		{
+			if (b == 0)
+				throw std::runtime_error("b can't equal to 0");
+			cout << "a / b = " <<a / b << endl;
+			break;
+		}
+		catch (std::runtime_error err)
+		{
+			cout << err.what() << endl;
+		}
+	}*/
+
+	//6.3:
+	/*cout << fact(5) << endl;*/
+	
+	//6.4:
+	/*cout << jiechen() << endl;*/
+
+	//6.5:
+	/*cout << juedui(-1) << endl;*/
+
+	//6.6
+	/*for (size_t i = 0; i != 10; ++i)
+	cout << count_add(i) << endl;*/
+
+	//6.7:
+	/*for (size_t i = 0;i != 10;++i)
+		cout << count_adds() << endl;*/
 	return 0;
 }
+
