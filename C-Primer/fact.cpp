@@ -1,7 +1,7 @@
 #include"Chapter6.h"
 #include<iostream>
 
-//在此定义
+//In this definition
 int fact(int val)
 {
 	if (val == 0 || val == 1)

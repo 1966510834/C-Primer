@@ -1,5 +1,5 @@
 #pragma once
-//ÔÚ´ËÉùÃ÷
+//In this statement
 int fact(int val);
 int func();
 

@@ -2,7 +2,7 @@
 #include<iostream>
 
 
-//在此使用
+//In this use
 //int main()
 //{
 //	std::cout << "5! is " << fact(5) << std::endl;
