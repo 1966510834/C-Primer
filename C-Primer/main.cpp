@@ -84,6 +84,21 @@ using std::pair;
 	return i++;
 }*/
 
+//6.11:
+/*void reset(int& i)
+{
+	i = 0;
+}*/
+
+//6.12:
+/*void changes(int& a, int& b)
+{
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+}*/
+
 int main() {
 	//1.3:
 	//cout << "Hello,World¡£" << endl;
@@ -812,6 +827,20 @@ int main() {
 	//6.7:
 	/*for (size_t i = 0;i != 10;++i)
 		cout << count_adds() << endl;*/
+
+	//6.11:
+	/*int i = 42;
+	reset(i);
+	cout << i << endl;*/
+
+	//6.12:
+	/*int a, b;
+	cout << "Please enter a and b" << endl;
+	cin >> a >> b;
+	changes(a, b);
+	cout << "a = " << a << "  " << "b = " << b << endl;*/
+
+	
 	return 0;
 }
 
