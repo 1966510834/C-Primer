@@ -1,4 +1,5 @@
 #pragma once
+//ÔÚ´ËÉùÃ÷
 int fact(int val);
 int func();
 
