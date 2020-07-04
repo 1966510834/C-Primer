@@ -99,6 +99,71 @@ using std::pair;
 	b = temp;
 }*/
 
+//6.17.1
+/*bool daxie(string const &s)
+{
+	for (auto ch : s)
+		if (isupper(ch))
+			return true;
+	return false;
+}*/
+
+//6.17.2
+/*void to_lowercase(string& str)
+{
+	for (auto& ch : str) ch = tolower(ch);
+}*/
+
+//6.21
+/*void compare(const int a, const int* b)
+{
+	if (a > * b)
+		cout << a << endl;
+	else
+		cout << *b << endl;
+}*/
+
+//6.22
+/*void exchange(int *&a,int *&b)
+{
+	auto temp = a;
+	a = b;
+	b = temp;
+}*/
+
+//6.23:
+/*void print(const int* pi)
+{
+	if (pi)
+		cout << *pi << endl;
+}
+
+void print(const char* p)
+{
+	if (p)
+		while (*p) cout << *p++;
+	cout << endl;
+}
+
+void print(const int* beg, const int* end)
+{
+	while (beg != end)
+		cout << *beg++ << endl;
+}
+
+void print(const int ia[], size_t size)
+{
+	for (size_t i = 0; i != size; ++i) {
+		cout << ia[i] << endl;
+	}
+}
+
+void print(int(&arr)[2])
+{
+	for (auto i : arr)
+		cout << i << endl;
+}*/
+
 int main() {
 	//1.3:
 	//cout << "Hello,World。" << endl;
@@ -840,7 +905,53 @@ int main() {
 	changes(a, b);
 	cout << "a = " << a << "  " << "b = " << b << endl;*/
 
+	//6.17:
+	/*string s = "Hello World";
+	cout << daxie(s) << endl;
+	to_lowercase(s);
+	cout << s << endl;*/
+
+	//6.21:
+	/*const int a = 2;
+	const int b = 3;
+	const int* p = &b;
+	compare(a,p);*/
+
+	//6.22:
+	/*int a = 1;
+	int b = 2;
+	int* p = &a;
+	int* q = &b;
+	exchange(p, q);
+	cout << *p << " " << *q << endl;*/
 	
+	//6.23:
+	/*int i = 0, j[2] = { 0, 1 };
+	char ch[5] = "pezy";
+
+	print(ch);
+	print(begin(j), end(j));
+	print(&i);
+	print(j, end(j) - begin(j));
+	print(j);*/
+
+	//
+
 	return 0;
 }
+
+//6.25
+/*int main(int argc, char* argv[]) //需要在命令行运行(PowerShell终端输入start cmd,打开cmd
+									界面后,输入C-Primer.exe prog -d -o ofile data0)
+{
+	string str;
+	for (int i = 1; i != argc; ++i)
+	{
+		str += string(argv[i]) + " ";
+	}
+
+	cout << str << endl;
+	return 0;
+}*/
+
 
